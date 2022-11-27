@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingScreen">
+
+    <Button
+        android:id="@+id/up_azalt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:onClick="handleClickedSettings"
+        android:text="-"
+        app:layout_constraintBottom_toTopOf="@+id/down_azlat"
+        app:layout_constraintEnd_toStartOf="@+id/up_arttir"
+        app:layout_constraintHorizontal_bias="0.005"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/up_arttir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:onClick="handleClickedSettings"
+        android:text="+"
+        app:layout_constraintBottom_toTopOf="@+id/down_arttir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.494" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/downlimit"
+        android:layout_width="135dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="408dp"
+        android:hint="hint"
+        app:layout_constraintEnd_toStartOf="@+id/down_arttir"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toEndOf="@+id/down_azlat"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/uplimit"
+        android:layout_width="135dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="180dp"
+        android:hint="hint"
+        app:layout_constraintEnd_toStartOf="@+id/up_arttir"
+        app:layout_constraintHorizontal_bias="0.298"
+        app:layout_constraintStart_toEndOf="@+id/up_azalt"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/down_azlat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="408dp"
+        android:onClick="handleClickedSettings"
+        android:text="-"
+        app:layout_constraintEnd_toStartOf="@+id/down_arttir"
+        app:layout_constraintHorizontal_bias="0.077"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/down_arttir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="408dp"
+        android:layout_marginEnd="16dp"
+        android:onClick="handleClickedSettings"
+        android:text="+"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
